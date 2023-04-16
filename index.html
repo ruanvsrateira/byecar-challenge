@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByeCar</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="modal.js" defer></script>
+    <script src="carrossel.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <img src="./assets/images/logo.png" alt="logo dnc" />
+        <h1>ByeCar</h1>
+    </header>
+
+    <!-- Parte principal -->
+    <main>
+        <div>
+            <p>Ter <span id="bold-text">uma moto</span> por assinatura</p>
+            <p>nunca foi tão facil</p>
+
+            <img src="./assets/images/banner-1.png" alt="Imagem de uma mulher com uma moto" />
+        </div>
+        <div>
+            <p>Conheça nossas <span id="bold-light-text">motos</span>!</p>
+            
+            <!-- Carrousel -->
+            <div class="carrossel-container">
+                <img id="arrow-left" src="./assets/images/arrow-left.png" alt="Seta para esquerda" />
+             
+                <div id="carrossel">
+                    <h1 id="title"></h1>
+                    <div class="image-container">    
+                        <img id="image" src="" alt="moto" />
+                    </div>
+                    <div class="product-detail">
+                        <h1>A partir de</h1>
+                        <div class="product-price">
+                            <p id="price"></p>
+                        </div>
+                        <p id="plan"></p>
+                    </div>
+                </div>
+                
+                <img id="arrow-right" src="assets/images/arrow-right.png" alt="Seta para direita" />
+            </div>
+
+            <button id="button-learn-more">Saiba mais</button>
+        </div>
+    </main>
+    
+    <!-- Modal -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close-icon-container">
+                <img src="./assets/images/close-icon.png" alt="close icon" id="close-button" />
+            </div>
+            <h1 id="title-info"></h1>
+            <p id="description-info"></p>
+            <div class="image-modal-container">
+                <img id="image" alt="">
+            </div>
+            <button>Quero Assinar!</button>
+        </div>
+    </div>
+</body>
+</html>

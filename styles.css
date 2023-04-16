@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: "Raleway";
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-bottom: 100px;
+}
+
+main div {
+    width: 50%;
+}
+
+main div:first-child p, div:last-child p {
+    font-family: "Verdana";
+    font-weight: 400;
+    color: #265E70;
+    font-size: 25px;
+    text-align: center;
+}
+
+main div:first-child span#bold-text {
+    font-weight: 700;
+}
+
+main div:last-child span#bold-light-text {
+    font-weight: 700;
+    color: #4DBCE9;
+}
+
+main div:first-child img {
+    margin-top: 24px;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div:last-child .carrossel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%!important;
+    justify-content: center;
+    width: 350px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #FFF;
+    font-family: "Verdana";
+}
+
+#arrow-left, #arrow-right {
+    cursor: pointer;
+    width: 20px;
+}
+
+.carrossel-container h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.carrossel-container #carrossel {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    background-color: #4DBCE9BF;
+}
+
+#plan {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #FFF;
+}
+
+.product-price {
+    background-color: #FFF;
+    width: 160px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.product-price p {
+    color: #265E70!important;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.image-container {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main div:last-child button {
+    width: 200px;
+    height: 45px;
+    background-color: #4DBCE9;
+    color: #FFF;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+main div:last-child button:hover {
+    border: 1px solid #4DBCE9;
+    background-color: #FFF;
+    animation: ease-in-out;
+    transition: 500ms;
+    color: #4DBCE9;
+}
+
+.modal {
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background: rgba(77, 188, 233, 0.75);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.modal-content .close-icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal-content .close-icon-container img {
+    cursor: pointer;
+}
+
+.modal-content #title-info {
+    font-size: 25px;
+    color: #FFF;
+    font-family: "Verdana";
+}
+
+.modal-content #description-info {
+    font-size: 17px;
+    color: #FFF;
+    font-weight: 600;
+    max-width: 80%;
+    font-family: "Raleway";
+}
+
+.modal-content .image-modal-container {
+    width: 70%;
+    height: 40%;
+}
+
+.image-modal-container #image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-content button {
+    width: 250px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    color: #265E70;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Raleway";
+}
